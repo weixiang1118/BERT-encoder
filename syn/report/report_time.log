@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : bert_encoder
+Version: R-2020.09-SP5
+Date   : Wed Jun  5 15:27:36 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: compute_finish (internal pin)
+  Endpoint: compute_finish
+            (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  compute_finish (out)                   0.0000     0.0000 r
+  data arrival time                                 0.0000
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

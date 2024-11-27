@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1718096585.335768436, "rt":1.01, "ut":0.05, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1718096584.845472501}
+{"VCS_COMP_START_TIME": 1718096584.845472501}
+{"VCS_COMP_END_TIME": 1718096587.753057245}
+{"VCS_USER_OPTIONS": "-full64 -R -debug_access+all +v2k +neg_tchk -notice -Mupdate -cm line+cond+fsm+tgl -f sim_rtl.f"}

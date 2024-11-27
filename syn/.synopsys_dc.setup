@@ -1,0 +1,29 @@
+#   1. Virtual Library Setup for NTHU VLSI/CAD Lab
+#   2. Copy this file synopsys_dc.setup to .synopsys_dc.setup
+#      and put it in tool's invoking directory or home.
+set company "NTHU"
+set designer "Tony Stark"
+set search_path       "/theda21_2/library/GPDK045/cur/gsclib045/db/ $search_path" 
+set target_library    "slow_vdd1v2_basicCells.db" 
+set link_library      "slow_vdd1v2_basicCells.db dw_foundation.sldb" 
+set symbol_library    "generic.sdb"
+set synthetic_library "dw_foundation.sldb"
+
+# Recognize synchronous reset (avoid mixing logics with reset)
+set hdlin_ff_always_sync_set_reset true
+
+#Environment Settings
+set command_log_file "./command.log"
+set view_command_log_file "./view_command.log"
+
+set hdlin_translate_off_skip_text "TRUE"
+set verilogout_no_tri true
+
+set sh_enable_line_editing true
+set sh_line_editing_mode emacs
+history keep 100
+alias h history
+
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _} -max_length 255 -type cell
+define_name_rules name_rule -allowed {a-z A-Z 0-9 _[]} -max_length 255 -type net
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}

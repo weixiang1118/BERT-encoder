@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/home/m111/m111061642/final/sim/vcs/non-linear_tb"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="T-2022.06"  />
+      <fileinfo name="softmax_tb.v"  id="0"  timestamp="1718249401"  />
+      <fileinfo name="layernorm_tb.v"  id="1"  timestamp="1718603818"  />
+      <fileinfo name="GELU_tb.v"  id="2"  timestamp="1718097275"  />
+      <fileinfo name="../non_linear_model/softmax.v"  id="3"  timestamp="1717911495"  />
+      <fileinfo name="../non_linear_model/layernorm.v"  id="4"  timestamp="1717911495"  />
+      <fileinfo name="../non_linear_model/GELU.v"  id="5"  timestamp="1717911495"  />
+    </srcinfo>

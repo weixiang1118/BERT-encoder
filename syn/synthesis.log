@@ -1,0 +1,191 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP5 for linux64 - Apr 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+set cycle 10
+10
+analyze -format verilog  { ../hdl/bert_encoder.v  }
+Running PRESTO HDLC
+Compiling source file ../hdl/bert_encoder.v
+Presto compilation completed successfully.
+Loading db file '/home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/slow.db'
+Loading db file '/home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/fast.db'
+Loading db file '/home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/typical.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+elaborate bert_encoder -architecture verilog 
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'fast'
+  Loading link library 'typical'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (bert_encoder)
+Elaborated 1 design.
+Current design is now 'bert_encoder'.
+1
+source compile.tcl
+
+  Linking design 'bert_encoder'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  bert_encoder                /home/m111/m111061642/final/syn/bert_encoder.db
+  slow (library)              /home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/slow.db
+  fast (library)              /home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/fast.db
+  typical (library)           /home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/typical.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+Error: Can't find the specified library 'slow_vdd1v2' in memory. (UID-131)
+Error: Cannot find operating condition PVT_1P08V_125C in library slow_vdd1v2. (UID-1220)
+Current design is 'bert_encoder'.
+Error: Can't find lib_pin 'slow_vdd1v2/DFFHQX1/Q'. (UID-109)
+Error: Value for list '<library_cell_pin>' must have 1 elements. (CMD-036)
+Error: Can't find lib_pin 'slow_vdd1v2/DFFHQX1/D'. (UID-109)
+Error: Value for list '<library_cell_pin>' must have 1 elements. (CMD-036)
+Warning: Can't find design '*' in design 'bert_encoder'. (UID-95)
+Error: Value for list 'design_list' must have 1 elements. (CMD-036)
+
+Current clock gating style....
+Sequential cell: latch
+Minimum bank bitwidth: 3
+Minimum bank bitwidth for enhanced clock gating: 6
+Maximum fanout: 10
+Setup time for clock gate: 0.000000
+Hold time for clock gate: 0.000000
+Clock gating circuitry (positive edge): and
+Clock gating circuitry (negative edge): or
+ Note: inverter between clock gating circuitry 
+       and (negative edge) register clock pin.
+Control point insertion: none
+Control signal for control point: scan_enable
+Observation point insertion: false
+Observation logic depth: 5
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.5 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.5 |     *     |
+============================================================================
+
+
+Warning: Operating condition slow set on design bert_encoder has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fast is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'bert_encoder'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Loading db file '/home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/fast.db'
+Loading db file '/home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/typical.db'
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                                  
+   ELAPSED            WORST NEG   SETUP    DESIGN                              MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT             COST    
+  --------- --------- --------- --------- --------- ------------------------- -----------
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+    0:00:03       0.0      0.00       0.0       0.0                                0.00  
+Loading db file '/home/m110/m110061576/process/CBDK_TSMC90GUTM_Arm_f1.0/orig_lib/aci/sc-x/synopsys/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Can't find objects matching '*' in design 'bert_encoder'. (UID-95)
+Error: Value for list 'cell_list' must have 1 elements. (CMD-036)
+Warning: Can't find objects matching '*' in design 'bert_encoder'. (UID-95)
+Error: Value for list 'cell_list' must have 1 elements. (CMD-036)
+Writing ddc file 'netlist/bert_encoder_syn.ddc'.
+Writing verilog file '/home/m111/m111061642/final/syn/netlist/bert_encoder_syn.v'.
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/m111/m111061642/final/syn/netlist/bert_encoder_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Information: Writing backward SAIF information to file 'netlist/bert_encoder_syn.saif'. (PWR-458)
+
+Memory usage for this session 243 Mbytes.
+Memory usage for this session including child processes 243 Mbytes.
+CPU usage for this session 7 seconds ( 0.00 hours ).
+Elapsed time for this session 12 seconds ( 0.00 hours ).
+
+Thank you...

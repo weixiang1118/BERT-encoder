@@ -1,0 +1,141 @@
+0 
+37
++itf+/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcsdp_lite.tab
++neg_tchk
++v2k
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/cad/synopsys/vcs/2022.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvirsim.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/liberrorinf.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/libsnpsmalloc.so /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/cad/synopsys/verdi/2022.06/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mupdate
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/cad/synopsys/vcs/2022.06/include
+-Mxllcflags=
+-P
+-Xnotice=1
+-Xvcs_run_simv=1
+-cm
+-debug_access+all
+-f sim_rtl.f
+-fsdb
+-full64
+-gen_obj
+-picarchive
+/usr/cad/synopsys/vcs/2022.06/linux64/bin/vcs1
+line+cond+fsm+tgl
+/usr/cad/synopsys/verdi/2022.06/share/PLI/VCS/LINUX64/verdi.tab
+sim_rtl.f
+81
+mraarch=linux_64
+installdir=/usr/cadtool/cad/synopsys/hspice/2020.03-sp2-2/hspice
+XLOCALEDIR=/usr/cad/synopsys/icc2/2021.06/etc/locale
+XDG_SESSION_ID=55878
+XDG_RUNTIME_DIR=/run/user/34072
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/cad/synopsys/verdi/2022.06
+VENDOR=unknown
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/cad/synopsys/vcs/2022.06
+VCS_EXEC_DONE=1
+VCS_DEPTH=0
+VCS_CC=gcc
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/cad/synopsys/vcs/2022.06/linux64
+TMIARCH=RH_64
+SYN_MAN_DIR=/usr/cad/synopsys/synthesis/cur/doc/syn/man
+SYNTHESIS=/usr/cad/synopsys/synthesis/cur
+SYNOPSYS_TMAX=/usr/cad/synopsys/tmax/cur
+SYNOPSYS=/usr/cad/synopsys/icc/cur
+SSH_TTY=/dev/pts/60
+SSH_CONNECTION=140.114.24.31 46764 140.114.24.120 22
+SSH_CLIENT=140.114.24.31 46764 22
+SPAPI_AHDL_INCLUDE=/usr/cadtool/cad/synopsys/hspice/2020.03-sp2-2/hspice/include
+SNPS_VCS_CLANG_PATH=/usr/cad/synopsys/vcs/2022.06/linux64/clang
+SNPS_PLATFORM=linux64
+SNPS_INTERNAL_VCS_LINUX_OS=linux
+SNPS_64=1
+SHLIB_PATH=/usr/cad/synopsys/verdi/2022.06/etc/lib/libstdc++/LINUX64/:/usr/cad/synopsys/verdi/2022.06/share/PLI/lib/LINUX64/:/usr/cad/synopsys/verdi/2022.06/share/PLI/VCS/LINUX64/:
+SG_HTML_BROWSER=/usr/bin/mozilla
+SC_HLPPATH=/usr/cad/synopsys/laker/cur
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=daisy
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PRIMETIME=/usr/cad/synopsys/primetime/cur
+PERL_MM_OPT=INSTALL_BASE=/home/m111/m111061642/perl5
+PERL_MB_OPT=--install_base /home/m111/m111061642/perl5
+PERL_LOCAL_LIB_ROOT=/home/m111/m111061642/perl5
+PERL_HOMEDIR=1
+PERL5LIB=/home/m111/m111061642/perl5/lib/perl5
+OVA_UUM=0
+OSTYPE=linux
+OA_HOME=/usr/cad/cadence/IC/IC_06.18.150/oa_v22.60.047
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
+MGC_HOME=/usr/cad/mentor/modelsim/cur/modeltech
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/60
+MAKE_TERMERR=/dev/pts/60
+MAKELEVEL=1
+MAKEFLAGS=
+Laker_TCL_ToolBox=1
+Laker_TCL_L3=1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KDEDIRS=/usr
+HSP_SIGMA_AMP=/usr/cadtool/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/python/Omega/Omega
+HSP_HOME=/usr/cadtool/cad/synopsys/hspice/2020.03-sp2-2/hspice
+HSP_GCC_VERSION=7.3.0
+HSP_GCC=/usr/cadtool/cad/synopsys/hspice/2020.03-sp2-2/hspice/GNU/linux64/gcc/bin/gcc -m64 
+HOSTTYPE=x86_64-linux
+GROUP=m111
+ENCOUNTER=/usr/cad/cadence/EDI/cur/tools/fe
+DESIGNWARE_HOME=/usr/cadtool/cad/synopsys/dw_home/cur
+CMIARCH=RH_64
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_AUTO_64BIT=NONE
+CDSHOME=/usr/cad/cadence/IC/IC_06.18.150
+CDPL_HOME=/usr/cadtool/cad/synopsys/hspice/2020.03-sp2-2/hspice/cdpl
+CALIBRE_HOME=/usr/cad/mentor/calibre/cur
+ARCH=linux64
+0
+0
+10
+1717911495 ../non_linear_model/GELU.v
+1717911495 ../non_linear_model/layernorm.v
+1717911495 ../non_linear_model/softmax.v
+1718097275 GELU_tb.v
+1718603818 layernorm_tb.v
+1718249401 softmax_tb.v
+1654052736 /usr/cad/synopsys/vcs/2022.06/include/cm_vcsd.tab
+1718089302 sim_rtl.f
+1653825972 /usr/cad/synopsys/verdi/2022.06/share/PLI/VCS/LINUX64/verdi.tab
+1654052745 /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcsdp_lite.tab
+4
+1654054205 /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvirsim.so
+1654053585 /usr/cad/synopsys/vcs/2022.06/linux64/lib/liberrorinf.so
+1654053489 /usr/cad/synopsys/vcs/2022.06/linux64/lib/libsnpsmalloc.so
+1654053565 /usr/cad/synopsys/vcs/2022.06/linux64/lib/libvfs.so
+1718603827 simv.daidir
+-1 partitionlib

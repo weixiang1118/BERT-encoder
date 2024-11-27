@@ -1,0 +1,112 @@
+Magic 271485
+Revision Verdi_T-2022.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 2560 1369 178 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/m111/m111061642/final/sim/vcs/non-linear_tb/softmax.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 648000.000000
+cursor 90000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 10
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "Softmax"
+activeDirFile "" "/home/m111/m111061642/final/sim/vcs/non-linear_tb/softmax.fsdb"
+addSignal -h 15 /tb_softmax/softmax_inst/clk
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -UNSIGNED -UDEC -holdScope S[7:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope in_scale[31:0]
+addSignal -h 15 -holdScope data_in_ready
+addSignal -h 15 -holdScope data_out_valid
+addSignal -h 15 -holdScope data_in_valid
+addSignal -h 15 -holdScope data_out_ready
+addSignal -h 15 -MAGN -UDEC -holdScope in_data[255:0]
+addSignal -h 15 -holdScope out_data_real[0:31]
+addSignal -h 15 -UNSIGNED -HEX -holdScope out_data[255:0]
+addSignal -h 15 -holdScope in_buffer[0:31]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope out_scale[31:0]
+addGroup "layernorm"
+addSignal -h 15 /tb_layernorm/layernorm_inst/clk
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -UNSIGNED -HEX -holdScope bias_scale[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope in_scale[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope out_scale[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope weight_scale[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope in_data[255:0]
+addSignal -h 15 -holdScope data_in_ready
+addSignal -h 15 -holdScope data_in_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope bias[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope out_data[255:0]
+addSignal -h 15 -holdScope data_out_ready
+addSignal -h 15 -holdScope data_out_valid
+addSubGroup "Gelu"
+endSubGroup "Gelu"
+addSignal -h 15 /tb_gelu/gelu_inst/clk
+addSignal -h 15 -holdScope rst
+addSignal -h 15 -UNSIGNED -HEX -holdScope in_scale[31:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope out_scale[31:0]
+addSignal -h 15 -holdScope data_in_ready
+addSignal -h 15 -holdScope data_in_valid
+addSignal -h 15 -holdScope data_out_ready
+addSignal -h 15 -holdScope data_out_valid
+addSignal -h 15 -UNSIGNED -HEX -holdScope in_data[255:0]
+addSignal -h 15 -UNSIGNED -HEX -holdScope out_data[255:0]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/m111/m111061642/final/sim/vcs/non-linear_tb/softmax.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/tb_gelu"
+"/tb_layernorm"
+"/tb_softmax"
+
+SCOPE_LIST_BEGIN
+"/tb_gelu"
+"/tb_gelu/gelu_inst"
+"/tb_layernorm"
+"/tb_softmax/softmax_inst"
+"/tb_layernorm/layernorm_inst"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

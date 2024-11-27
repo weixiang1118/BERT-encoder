@@ -1,0 +1,13 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "bert_encoder")
+(DATE "Wed Jun  5 15:27:36 2024")
+(VENDOR "slow")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "R-2020.09-SP5")
+(DIVIDER /)
+(VOLTAGE 0.90:0.90:0.90)
+(PROCESS "slow")
+(TEMPERATURE 125.00:125.00:125.00)
+(TIMESCALE 1ns)
+)

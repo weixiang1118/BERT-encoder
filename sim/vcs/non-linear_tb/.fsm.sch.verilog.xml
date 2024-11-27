@@ -1,0 +1,20 @@
+<Command name="schRTLInfo"  delimiter="."  >
+<RTLBlock >
+<RTLInfo   name="state_0"  type="2"  fileName="../non_linear_model/softmax.v"  >
+    <Seg beginLine="27"  endLine="68"  />
+  </RTLInfo>
+<Instance name="tb_softmax.softmax_inst"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_1"  type="2"  fileName="../non_linear_model/GELU.v"  >
+    <Seg beginLine="42"  endLine="49"  />
+  </RTLInfo>
+<Instance name="tb_gelu.gelu_inst"  />
+</RTLBlock>
+<RTLBlock >
+<RTLInfo   name="state_2"  type="2"  fileName="../non_linear_model/layernorm.v"  >
+    <Seg beginLine="125"  endLine="151"  />
+  </RTLInfo>
+<Instance name="tb_layernorm.layernorm_inst"  />
+</RTLBlock>
+</Command>

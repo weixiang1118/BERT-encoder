@@ -1,0 +1,18 @@
+#######################################################################################
+# fsdb.xxxxx.log : log primitive debug message of FSDB Reader
+# This is for R&D to analyze when there are issues happening when FSDB reading
+# The corresponding FSDB file is /home/m111/m111061642/final/sim/vcs/non-linear_tb/softmax.fsdb
+#######################################################################################
+[BASIC]Reader version : Chronologic Simulation VCS Release T-2022.06_Full64
+[BASIC]simulator version : Chronologic Simulation VCS Release T-2022.06_Full64
+[BASIC]dumper version : FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+[THREAD]The MTR thread count is 12
+[THREAD]Secondary thread count: 5
+[READSCOPE]ReadScopeTree calling time is 1
+[READSCOPE]ReadScope_PartialLoad calling time is 0
+[READSCOPE]Scope read by partial load count is 0
+[READSCOPE]Scope read count is 7
+[READSCOPE]Decompressed blk is 6
+[FSDBGate Info] start
+[FSDBGate Info] Total fhdb_compute_count = 351
+[FSDBGate Info] end

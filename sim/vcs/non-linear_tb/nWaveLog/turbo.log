@@ -1,0 +1,3 @@
+Command Line: /usr/cad/synopsys/verdi/2022.06/platform/LINUXAMD64/bin/Novas -nWave -ssr signal.rc
+uname(Linux ws24 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64)
+au time 839.855008 15.026245 12.077104 delta 566972416 566972416 total 1094410240 1094410240

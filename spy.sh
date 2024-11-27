@@ -1,0 +1,1 @@
+sg_shell -tcl spyglass.tcl | tee spyglass.log

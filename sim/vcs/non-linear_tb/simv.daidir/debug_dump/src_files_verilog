@@ -1,0 +1,6 @@
+/home/m111/m111061642/final/sim/vcs/non-linear_tb/GELU_tb.v
+/home/m111/m111061642/final/sim/vcs/non-linear_tb/layernorm_tb.v
+/home/m111/m111061642/final/sim/vcs/non-linear_tb/softmax_tb.v
+/home/m111/m111061642/final/sim/vcs/non_linear_model/GELU.v
+/home/m111/m111061642/final/sim/vcs/non_linear_model/layernorm.v
+/home/m111/m111061642/final/sim/vcs/non_linear_model/softmax.v

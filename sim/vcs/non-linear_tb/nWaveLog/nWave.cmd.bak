@@ -1,0 +1,67 @@
+wvRestoreSignal -win $_nWave1 "signal.rc" -overWriteAutoAlias on -appendSignals \
+           on
+wvResizeWindow -win $_nWave1 0 23 2560 1369
+wvResizeWindow -win $_nWave1 0 23 2560 1369
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 52609.340899 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 66468.790921 -snap {("Softmax" 7)}
+wvSelectSignal -win $_nWave1 {( "Softmax" 8 )} 
+wvSelectSignal -win $_nWave1 {( "Softmax" 5 )} 
+wvSetCursor -win $_nWave1 89945.002182 -snap {("Softmax" 6)}
+wvSelectSignal -win $_nWave1 {( "Softmax" 6 )} 
+wvSetCursor -win $_nWave1 56003.491925 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 65337.407246 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 77782.627674 -snap {("Softmax" 1)}
+wvSetCursor -win $_nWave1 89662.156264 -snap {("Softmax" 1)}
+wvSetCursor -win $_nWave1 102955.914448 -snap {("Softmax" 1)}
+wvSetCursor -win $_nWave1 112855.521606 -snap {("Softmax" 1)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "Softmax" 8 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 162636.403317 -snap {("Softmax" 7)}
+wvSelectSignal -win $_nWave1 {( "Softmax" 9 )} 
+wvSetCursor -win $_nWave1 184415.539066 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 164616.324749 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 186395.460498 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 222599.738106 -snap {("Softmax" 1)}
+wvSetCursor -win $_nWave1 270683.544304 -snap {("Softmax" 1)}
+wvResizeWindow -win $_nWave1 8 31 892 202
+wvResizeWindow -win $_nWave1 8 31 892 891
+wvResizeWindow -win $_nWave1 8 31 1352 891
+wvResizeWindow -win $_nWave1 0 23 2560 1369
+wvSetCursor -win $_nWave1 164050.632911 -snap {("Softmax" 7)}
+wvSelectSignal -win $_nWave1 {( "Softmax" 7 )} 
+wvSetCursor -win $_nWave1 185829.768660 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 197143.605412 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 161505.019642 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 183849.847228 -snap {("Softmax" 7)}
+wvSelectSignal -win $_nWave1 {( "Softmax" 6 )} 
+wvSetCursor -win $_nWave1 197992.143169 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 187526.844173 -snap {("Softmax" 11)}
+wvSetCursor -win $_nWave1 76368.398079 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 67317.328677 -snap {("Softmax" 1)}
+wvSetCursor -win $_nWave1 78065.473592 -snap {("Softmax" 1)}
+wvSetCursor -win $_nWave1 162919.249236 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 186678.306416 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 162919.249236 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 187526.844173 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 116532.518551 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 137745.962462 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 55720.646006 -snap {("Softmax" 7)}
+wvSetCursor -win $_nWave1 78914.011349 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 196860.759494 -snap {("Softmax" 6)}
+wvSetCursor -win $_nWave1 223165.429943 -snap {("Softmax" 1)}
+wvSetCursor -win $_nWave1 76934.089917 -snap {("Softmax" 6)}
+wvSelectSignal -win $_nWave1 {( "Softmax" 8 )} 
+wvSelectSignal -win $_nWave1 {( "layernorm" 8 )} 
+wvSelectSignal -win $_nWave1 {( "layernorm" 8 )} 
+wvSelectSignal -win $_nWave1 {( "layernorm" 9 )} 
+wvSetCursor -win $_nWave1 91642.077695 -snap {("Softmax" 6)}
+wvSaveSignal -win $_nWave1 \
+           "/home/m111/m111061642/final/sim/vcs/non-linear_tb/signal.rc"
+wvExit

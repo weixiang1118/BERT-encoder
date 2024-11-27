@@ -1,0 +1,175 @@
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Mon Jun 17 13:57:00 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'softmax_tb.v'
+Parsing design file 'layernorm_tb.v'
+Parsing design file 'GELU_tb.v'
+Parsing design file '../non_linear_model/softmax.v'
+Parsing design file '../non_linear_model/layernorm.v'
+Parsing design file '../non_linear_model/GELU.v'
+Top Level Modules:
+       tb_softmax
+       tb_layernorm
+       tb_gelu
+TimeScale is 1 ns / 1 ps
+
+Warning-[PCWM-W] Port connection width mismatch
+softmax_tb.v, 20
+"softmax softmax_inst( .clk (clk),  .rst (rst),  .data_in_valid (data_in_valid),  .data_out_ready (data_out_ready),  .in_data (in_data),  .in_scale (20132),  .out_scale (475),  .S (28),  .data_out_valid (data_out_valid),  .data_in_ready (data_in_ready),  .out_data (out_data));"
+  The following 32-bit expression is connected to 8-bit port "S" of module 
+  "softmax", instance "softmax_inst".
+  Expression: 28
+  Instantiated module defined at: "../non_linear_model/softmax.v", 1
+  Use +lint=PCWM for more details.
+
+VCS Coverage Metrics Release T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+Starting vcs inline pass...
+3 modules and 0 UDP read.
+Generating code for _VCSgd_QjRKy
+Generating code for _VCSgd_H0Thu
+recompiling module tb_layernorm
+Generating code for _VCSgd_p6ErI
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory '/home/m111/m111061642/final/sim/vcs/non-linear_tb/csrc'
+make[1]: Leaving directory '/home/m111/m111061642/final/sim/vcs/non-linear_tb/csrc'
+make[1]: Entering directory '/home/m111/m111061642/final/sim/vcs/non-linear_tb/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib  -Wl,-rpath-link=./    _36591_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -lreader_common /usr/cad/synopsys/vcs/2022.06/linux64/lib/libBA.a -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o /usr/cad/synopsys/verdi/2022.06/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home/m111/m111061642/final/sim/vcs/non-linear_tb/csrc'
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Jun 17 13:57 2024
+
+ VCS Coverage Metrics Release T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'softmax.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all and +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'layernorm.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all and +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+Reset System
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'GELU.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all and +mda dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+Compute start
+out_data[0.000000] = 46.000000
+out_data[1.000000] = 36.000000
+out_data[2.000000] = 34.000000
+out_data[3.000000] = -6.000000
+out_data[4.000000] = 89.000000
+out_data[5.000000] = 0.000000
+out_data[6.000000] = 0.000000
+out_data[7.000000] = 0.000000
+out_data[8.000000] = 0.000000
+out_data[9.000000] = 0.000000
+out_data[10.000000] = 0.000000
+out_data[11.000000] = 0.000000
+out_data[12.000000] = 0.000000
+out_data[13.000000] = 0.000000
+out_data[14.000000] = 0.000000
+out_data[15.000000] = 0.000000
+out_data[16.000000] = 0.000000
+out_data[17.000000] = 0.000000
+out_data[18.000000] = 0.000000
+out_data[19.000000] = 0.000000
+out_data[20.000000] = 0.000000
+out_data[21.000000] = 0.000000
+out_data[22.000000] = 0.000000
+out_data[23.000000] = 0.000000
+out_data[24.000000] = 0.000000
+out_data[25.000000] = 0.000000
+out_data[26.000000] = 0.000000
+out_data[27.000000] = 0.000000
+out_data[28.000000] = 0.000000
+out_data[29.000000] = 0.000000
+out_data[30.000000] = 0.000000
+out_data[31.000000] = 0.000000
+Simulation finish
+Compute start
+Compute start
+out_data[0.000000] = 0.000000
+out_data[1.000000] = 0.000000
+out_data[2.000000] = 0.000000
+out_data[3.000000] = 0.000000
+out_data[4.000000] = 0.000000
+out_data[5.000000] = 0.000000
+out_data[6.000000] = 0.000000
+out_data[7.000000] = 0.000000
+out_data[8.000000] = 0.000000
+out_data[9.000000] = 0.000000
+out_data[10.000000] = 0.000000
+out_data[11.000000] = 0.000000
+out_data[12.000000] = 0.000000
+out_data[13.000000] = 0.000000
+out_data[14.000000] = 0.000000
+out_data[15.000000] = 0.000000
+out_data[16.000000] = 0.000000
+out_data[17.000000] = 0.000000
+out_data[18.000000] = 0.000000
+out_data[19.000000] = 0.000000
+out_data[20.000000] = 0.000000
+out_data[21.000000] = 0.000000
+out_data[22.000000] = 0.000000
+out_data[23.000000] = 0.000000
+out_data[24.000000] = 0.000000
+out_data[25.000000] = 0.000000
+out_data[26.000000] = 0.000000
+out_data[27.000000] = 0.000000
+out_data[28.000000] = 0.000000
+out_data[29.000000] = 0.000000
+out_data[30.000000] = 0.000000
+out_data[31.000000] = 0.000000
+Simulation finish
+$finish called from file "GELU_tb.v", line 77.
+$finish at simulation time               648000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 648000 ps
+CPU Time:      0.500 seconds;       Data structure size:   0.2Mb
+Mon Jun 17 13:57:06 2024
+CPU time: .633 seconds to compile + .513 seconds to elab + .551 seconds to link + .581 seconds in simulation

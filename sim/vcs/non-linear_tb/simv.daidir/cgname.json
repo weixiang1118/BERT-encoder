@@ -1,0 +1,26 @@
+{
+    "tb_softmax": [
+        "tb_softmax",
+        "QjRKy",
+        "module",
+        1
+    ],
+    "tb_layernorm": [
+        "tb_layernorm",
+        "H0Thu",
+        "module",
+        2
+    ],
+    "tb_gelu": [
+        "tb_gelu",
+        "p6ErI",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}
